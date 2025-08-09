@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_replicable_people",
+  "info": {
+    "displayName": "person"
+  },
+  "options": {},
+  "attributes": {
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "name": {
+      "type": "text",
+      "required": true
+    },
+    "socialNetworks": {
+      "type": "json"
+    },
+    "bio": {
+      "type": "blocks"
+    },
+    "biografia": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultMarkdown"
+      }
+    },
+    "bioHTML": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      }
+    }
+  },
+  "config": {}
+}

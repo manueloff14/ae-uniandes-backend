@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_replicable_books",
+  "info": {
+    "displayName": "book"
+  },
+  "options": {},
+  "attributes": {
+    "portada": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

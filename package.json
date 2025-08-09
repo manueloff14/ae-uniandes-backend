@@ -1,0 +1,36 @@
+{
+  "name": "ae-uniandes-strapi-backend",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A Strapi application",
+  "scripts": {
+    "build": "strapi build",
+    "console": "strapi console",
+    "deploy": "strapi deploy",
+    "dev": "strapi develop",
+    "develop": "strapi develop",
+    "start": "strapi start",
+    "strapi": "strapi",
+    "upgrade": "npx @strapi/upgrade latest",
+    "upgrade:dry": "npx @strapi/upgrade latest --dry"
+  },
+  "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^6.0.2",
+    "@strapi/plugin-cloud": "5.19.0",
+    "@strapi/plugin-users-permissions": "5.19.0",
+    "@strapi/strapi": "5.19.0",
+    "better-sqlite3": "11.3.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^6.0.0",
+    "styled-components": "^6.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0 <=22.x.x",
+    "npm": ">=6.0.0"
+  },
+  "strapi": {
+    "uuid": "930fdad8-2f55-47a2-ad52-01408b4ce169",
+    "installId": "9534b2c868910e7ff7e10c8d9ca444e3c3c2e22d8639fa4252eb8f8fa7944d7d"
+  }
+}

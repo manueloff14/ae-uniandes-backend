@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_gallery_page_galleries",
+  "info": {
+    "displayName": "Gallery"
+  },
+  "options": {},
+  "attributes": {
+    "info": {
+      "type": "json",
+      "required": true
+    },
+    "imageGallery": {
+      "type": "component",
+      "component": "replicable.image-gallery",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "acerca_de_ae_pages",
+  "info": {
+    "singularName": "acerca-de-ae-page",
+    "pluralName": "acerca-de-ae-pages",
+    "displayName": "Acerca de AE Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "coordinadores": {
+      "type": "component",
+      "component": "about-us.coordinadores",
+      "repeatable": false,
+      "required": true
+    },
+    "volundarios": {
+      "type": "component",
+      "component": "about-us.voluntarios",
+      "repeatable": false,
+      "required": true
+    },
+    "ourIdentity": {
+      "type": "component",
+      "component": "about-us.our-identity",
+      "repeatable": false,
+      "required": true
+    },
+    "impact": {
+      "type": "component",
+      "component": "about-us.impact",
+      "repeatable": false,
+      "required": true
+    },
+    "global": {
+      "type": "component",
+      "component": "about-us.global",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "proyectos_pages",
+  "info": {
+    "singularName": "proyectos-page",
+    "pluralName": "proyectos-pages",
+    "displayName": "Proyectos Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "component": "hero-section.hero-section",
+      "repeatable": false,
+      "required": true
+    },
+    "Projects": {
+      "type": "component",
+      "component": "projects-page.projects",
+      "repeatable": false,
+      "required": true
+    },
+    "sendProject": {
+      "type": "component",
+      "component": "projects-page.send-project",
+      "repeatable": false,
+      "required": true
+    }
+  }
+}

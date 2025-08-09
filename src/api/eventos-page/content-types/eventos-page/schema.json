@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "eventos_pages",
+  "info": {
+    "singularName": "eventos-page",
+    "pluralName": "eventos-pages",
+    "displayName": "Eventos Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "component": "hero-section.hero-section",
+      "repeatable": false,
+      "required": true
+    },
+    "EventsInfo": {
+      "type": "component",
+      "component": "events-page.events-info",
+      "repeatable": false,
+      "required": true
+    }
+  }
+}

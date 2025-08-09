@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_about_us_impacts",
+  "info": {
+    "displayName": "impact"
+  },
+  "options": {},
+  "attributes": {
+    "info": {
+      "type": "json",
+      "required": true
+    }
+  },
+  "config": {}
+}

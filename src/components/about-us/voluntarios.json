@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_about_us_voluntarios",
+  "info": {
+    "displayName": "voluntarios"
+  },
+  "options": {},
+  "attributes": {
+    "info": {
+      "type": "json",
+      "required": true
+    },
+    "person": {
+      "type": "component",
+      "component": "replicable.person",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

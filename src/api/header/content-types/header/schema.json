@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "headers",
+  "info": {
+    "singularName": "header",
+    "pluralName": "headers",
+    "displayName": "Header"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "logoAEUniandes": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "links": {
+      "type": "json",
+      "required": true
+    },
+    "buttonAction": {
+      "type": "json"
+    },
+    "lema": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

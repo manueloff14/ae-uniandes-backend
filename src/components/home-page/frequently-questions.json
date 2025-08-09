@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_home_page_frequently_questions",
+  "info": {
+    "displayName": "frequentlyQuestions"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "question": {
+      "type": "component",
+      "component": "replicable.question",
+      "repeatable": true,
+      "required": true
+    }
+  },
+  "config": {}
+}

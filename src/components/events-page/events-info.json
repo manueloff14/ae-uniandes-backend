@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_events_page_events_infos",
+  "info": {
+    "displayName": "EventsInfo"
+  },
+  "options": {},
+  "attributes": {
+    "linkEmbedLumma": {
+      "type": "text",
+      "required": true
+    },
+    "linkLumma": {
+      "type": "text",
+      "required": true
+    },
+    "imageLumma": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "textButton": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

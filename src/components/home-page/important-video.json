@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_page_important_videos",
+  "info": {
+    "displayName": "importantVideo"
+  },
+  "options": {},
+  "attributes": {
+    "info": {
+      "type": "json",
+      "required": true
+    },
+    "portada": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "videoLink": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}

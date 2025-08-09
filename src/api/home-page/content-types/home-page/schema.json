@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeroSection": {
+      "type": "component",
+      "component": "hero-section.hero-section",
+      "repeatable": false,
+      "required": true
+    },
+    "whyAE": {
+      "type": "component",
+      "component": "home-page.why-ae",
+      "repeatable": false,
+      "required": true
+    },
+    "importantVideo": {
+      "type": "component",
+      "component": "home-page.important-video",
+      "repeatable": false,
+      "required": true
+    },
+    "importantEvents": {
+      "type": "component",
+      "component": "home-page.important-events",
+      "repeatable": false,
+      "required": true
+    },
+    "books": {
+      "type": "component",
+      "component": "home-page.books",
+      "repeatable": false,
+      "required": true
+    },
+    "frequentlyQuestions": {
+      "type": "component",
+      "component": "home-page.frequently-questions",
+      "repeatable": false,
+      "required": true
+    }
+  }
+}

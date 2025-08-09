@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "galeria_pages",
+  "info": {
+    "singularName": "galeria-page",
+    "pluralName": "galeria-pages",
+    "displayName": "Galería Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Gallery": {
+      "type": "component",
+      "component": "gallery-page.gallery",
+      "repeatable": false,
+      "required": true
+    }
+  }
+}

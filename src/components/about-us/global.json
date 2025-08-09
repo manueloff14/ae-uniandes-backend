@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_about_us_globals",
+  "info": {
+    "displayName": "global"
+  },
+  "options": {},
+  "attributes": {
+    "logoAEGlobal": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "portada": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "text": {
+      "type": "text",
+      "required": true
+    },
+    "buttonAction": {
+      "type": "json",
+      "required": true
+    }
+  },
+  "config": {}
+}

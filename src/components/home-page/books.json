@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_home_page_books",
+  "info": {
+    "displayName": "books"
+  },
+  "options": {},
+  "attributes": {
+    "info": {
+      "type": "json",
+      "required": true
+    },
+    "book": {
+      "type": "component",
+      "component": "replicable.book",
+      "repeatable": true
+    },
+    "buttonAction": {
+      "type": "json",
+      "required": true
+    }
+  },
+  "config": {}
+}

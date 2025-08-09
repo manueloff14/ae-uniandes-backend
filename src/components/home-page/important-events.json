@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_page_important_events",
+  "info": {
+    "displayName": "importantEvents"
+  },
+  "options": {},
+  "attributes": {
+    "info": {
+      "type": "json",
+      "required": true
+    },
+    "linkEmbed": {
+      "type": "text",
+      "required": true
+    }
+  },
+  "config": {}
+}
