@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "fellowship_pages",
+  "info": {
+    "singularName": "fellowship-page",
+    "pluralName": "fellowship-pages",
+    "displayName": "Fellowship Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": false
+    }
+  },
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "component": "hero-section.hero-section",
+      "repeatable": false,
+      "required": true
+    },
+    "content": {
+      "type": "customField",
+      "customField": "plugin::ckeditor5.CKEditor",
+      "options": {
+        "preset": "defaultHtml"
+      },
+      "required": true
+    },
+    "frequentlyQuestions": {
+      "type": "component",
+      "component": "home-page.frequently-questions",
+      "repeatable": false,
+      "required": true
+    }
+  }
+}

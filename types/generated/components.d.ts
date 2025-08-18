@@ -226,15 +226,7 @@ export interface ReplicablePerson extends Struct.ComponentSchema {
     displayName: 'person';
   };
   attributes: {
-    bio: Schema.Attribute.Blocks;
-    biografia: Schema.Attribute.RichText &
-      Schema.Attribute.CustomField<
-        'plugin::ckeditor5.CKEditor',
-        {
-          preset: 'defaultMarkdown';
-        }
-      >;
-    bioHTML: Schema.Attribute.RichText &
+    bio: Schema.Attribute.RichText &
       Schema.Attribute.CustomField<
         'plugin::ckeditor5.CKEditor',
         {

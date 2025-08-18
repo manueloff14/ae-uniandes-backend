@@ -21,16 +21,6 @@
       "type": "json"
     },
     "bio": {
-      "type": "blocks"
-    },
-    "biografia": {
-      "type": "customField",
-      "customField": "plugin::ckeditor5.CKEditor",
-      "options": {
-        "preset": "defaultMarkdown"
-      }
-    },
-    "bioHTML": {
       "type": "customField",
       "customField": "plugin::ckeditor5.CKEditor",
       "options": {

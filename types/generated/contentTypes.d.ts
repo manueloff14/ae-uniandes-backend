@@ -444,6 +444,57 @@ export interface ApiEventosPageEventosPage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiFellowshipPageFellowshipPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'fellowship_pages';
+  info: {
+    displayName: 'Fellowship Page';
+    pluralName: 'fellowship-pages';
+    singularName: 'fellowship-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: false;
+    };
+  };
+  attributes: {
+    content: Schema.Attribute.RichText &
+      Schema.Attribute.Required &
+      Schema.Attribute.CustomField<
+        'plugin::ckeditor5.CKEditor',
+        {
+          preset: 'defaultHtml';
+        }
+      >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    frequentlyQuestions: Schema.Attribute.Component<
+      'home-page.frequently-questions',
+      false
+    > &
+      Schema.Attribute.Required;
+    heroSection: Schema.Attribute.Component<
+      'hero-section.hero-section',
+      false
+    > &
+      Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::fellowship-page.fellowship-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFooterFooter extends Struct.SingleTypeSchema {
   collectionName: 'footers';
   info: {
@@ -1135,6 +1186,7 @@ declare module '@strapi/strapi' {
       'admin::user': AdminUser;
       'api::acerca-de-ae-page.acerca-de-ae-page': ApiAcercaDeAePageAcercaDeAePage;
       'api::eventos-page.eventos-page': ApiEventosPageEventosPage;
+      'api::fellowship-page.fellowship-page': ApiFellowshipPageFellowshipPage;
       'api::footer.footer': ApiFooterFooter;
       'api::galeria-page.galeria-page': ApiGaleriaPageGaleriaPage;
       'api::header.header': ApiHeaderHeader;
