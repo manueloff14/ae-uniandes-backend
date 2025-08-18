@@ -9,11 +9,7 @@
   "options": {
     "draftAndPublish": true
   },
-  "pluginOptions": {
-    "i18n": {
-      "localized": false
-    }
-  },
+  "pluginOptions": {},
   "attributes": {
     "heroSection": {
       "type": "component",
@@ -27,6 +23,10 @@
       "options": {
         "preset": "defaultHtml"
       },
+      "required": true
+    },
+    "buttonApply": {
+      "type": "json",
       "required": true
     },
     "frequentlyQuestions": {

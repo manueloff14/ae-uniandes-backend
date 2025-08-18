@@ -455,12 +455,8 @@ export interface ApiFellowshipPageFellowshipPage
   options: {
     draftAndPublish: true;
   };
-  pluginOptions: {
-    i18n: {
-      localized: false;
-    };
-  };
   attributes: {
+    buttonApply: Schema.Attribute.JSON & Schema.Attribute.Required;
     content: Schema.Attribute.RichText &
       Schema.Attribute.Required &
       Schema.Attribute.CustomField<
