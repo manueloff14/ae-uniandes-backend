@@ -59,6 +59,19 @@ export interface AboutUsVoluntarios extends Struct.ComponentSchema {
   };
 }
 
+export interface BlogPageComponentsAuthorRole extends Struct.ComponentSchema {
+  collectionName: 'components_blog_page_components_author_roles';
+  info: {
+    displayName: 'Author Role';
+  };
+  attributes: {
+    author: Schema.Attribute.Relation<'oneToOne', 'api::author.author'>;
+    role: Schema.Attribute.Enumeration<
+      ['Editor Principal', 'Co-autor', 'Revisor', 'Colaborador', 'Ilustrador']
+    >;
+  };
+}
+
 export interface EventsPageEventsInfo extends Struct.ComponentSchema {
   collectionName: 'components_events_page_events_infos';
   info: {
@@ -270,6 +283,7 @@ declare module '@strapi/strapi' {
       'about-us.impact': AboutUsImpact;
       'about-us.our-identity': AboutUsOurIdentity;
       'about-us.voluntarios': AboutUsVoluntarios;
+      'blog-page-components.author-role': BlogPageComponentsAuthorRole;
       'events-page.events-info': EventsPageEventsInfo;
       'gallery-page.gallery': GalleryPageGallery;
       'hero-section.hero-section': HeroSectionHeroSection;

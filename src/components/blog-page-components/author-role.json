@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_blog_page_components_author_roles",
+  "info": {
+    "displayName": "Author Role"
+  },
+  "options": {},
+  "attributes": {
+    "author": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::author.author"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "Editor Principal",
+        "Co-autor",
+        "Revisor",
+        "Colaborador",
+        "Ilustrador"
+      ]
+    }
+  },
+  "config": {}
+}
